@@ -1,0 +1,421 @@
+*{
+    scroll-behavior: smooth;
+    font-family: 'Poppins', sans-serif;
+}
+
+body{
+    margin: 0px;
+    padding: 0px;
+    background-color: #1b1b2f;
+}
+
+.container-fluid{
+    margin: 0px;
+    padding: 0px;
+}
+
+/* awal navbar */
+
+    nav{
+        padding: 5px;
+        text-align: center;
+        width: 100%;
+        background-color: #1b1b2f;
+        display: flex;
+        justify-content: space-between; 
+    }
+
+    nav > ul{
+        margin-top: 25px;
+        padding: 0px;
+        /* background-color: saddlebrown; */
+    }
+
+    nav > ul > li{
+        /* background-color: sandybrown; */
+        display: inline;
+        padding: 30px;
+    }
+
+    li > .link{
+        text-decoration: none;
+        color: honeydew;
+        transition: 0.3s;
+    }
+
+    li > .link:hover{
+        text-decoration: none;
+        color: #c02739;
+        transition: 0.3s;
+    }
+
+    nav > .logo{
+        padding-left: 20px;
+        padding-top: 20px;
+        font-size: larger;
+        color: honeydew;
+    }
+
+    .ianim{
+        color: #c02739;
+        position: absolute;
+        top: 25px;
+        left: 95px;
+    }
+
+    .tanim{
+        position: absolute;
+        top: 25px;
+        left: 105px;
+    }
+
+    .sidenav {
+        height: 100%; /* 100% Full-height */
+        width: 0; /* 0 width - change this with JavaScript */
+        position: fixed; /* Stay in place */
+        z-index: 60; /* Stay on top */
+        top: 0;
+        right: 0;
+        background-color: #111; /* Black*/
+        overflow-x: hidden; /* Disable horizontal scroll */
+        padding-top: 60px; /* Place content 60px from the top */
+        transition: 0.5s; /* 0.5 second transition effect to slide in the sidenav */
+    }
+
+    nav > .sidebtn{
+        color: white;
+    }
+
+    /*untuk layar device berukuran kecil*/
+    @media screen and (max-width: 600px) {
+        nav > ul {
+            display: none;
+        }   
+    }  
+
+    /*untuk layar device berukuran sedang*/
+    @media screen and (min-width: 601px) {
+        nav > .sidenav{
+            display: none;
+        }
+        nav > .sidebtn{
+            display: none;
+        }
+    }
+    
+    /*untuk layar device berukuran besar*/
+    @media screen and (min-width: 800px) {
+        nav > .sidenav{
+            display: none;
+            margin: 0px;
+        }
+        nav > .sidebtn{
+            display: none;
+        }
+    }
+
+    /* The navigation menu links */
+    .sidenav a {
+        padding: 8px 8px 8px 32px;
+        text-decoration: none;
+        font-size: 25px;
+        color: #818181;
+        display: block;
+        transition: 0.3s
+    }
+
+    .sidenav span {
+        padding: 8px 8px 8px 32px;
+        text-decoration: none;
+        font-size: 25px;
+        color: #818181;
+        display: block;
+        transition: 0.3s;
+        z-index: 10;
+    }
+
+    /* When you mouse over the navigation links, change their color */
+    .sidenav a:hover, .offcanvas a:focus{
+        color: #f1f1f1;
+        font-size: xx-large;
+        padding: 50px;
+    }
+
+    .sidenav span:hover, .offcanvas a:focus{
+        color: #f1f1f1;
+        font-size: xx-large;
+    }
+
+    /* Position and style the close button (top right corner) */
+    .sidenav .closebtn {
+        position: absolute;
+        top: 0;
+        left: 0;
+        font-size: 36px;
+        margin-right: 50px;
+    }
+
+    /* Style page content - use this if you want to push the page content to the right when you open the side navigation */
+    #main {
+        transition: margin-left .5s;
+        padding: 20px;
+    }
+
+    /* On smaller screens, where height is less than 450px, change the style of the sidenav (less padding and a smaller font size) */
+    @media screen and (max-height: 450px) {
+        .sidenav {padding-top: 15px;}
+        .sidenav a {font-size: 18px;}
+    }
+
+/* akhir navbar */
+
+/* awal header */
+
+    .saklar{
+        position: absolute;
+        left: 950px;
+        top: 250px;
+    }
+
+    .bulan{
+        position: absolute;
+        opacity: 0.8;
+        width: 80px;
+        height: 80px;
+    }
+
+    .matahari{
+        position: absolute;
+        opacity: 0.5;
+        scale: 200%;
+    }
+
+    .gunung{
+        position: relative;
+        top: 160px;
+        z-index: 50;
+        width: 100%;
+        height: auto;
+        background-size: cover;
+    }
+
+    .awan{
+        position: absolute;
+        top: 20px;
+        left: 0;
+        z-index: -3;
+        width: 100%;
+        height: auto;
+        background-size: cover;
+        opacity: 0;
+    }
+
+    .box-tulisan{
+        border-top-left-radius: 30px;
+        top: 70px;
+        height: 500px;
+        padding: 50px;
+        position: absolute;
+        right: 0;
+        background-color: #c02739;
+        color: white;
+        opacity: 0.9;
+        box-shadow: 
+           inset 0.5rem 0.5rem 0.5rem rgba(0, 0, 0, 0.5),
+           0.5rem 0.5rem 0.5rem rgba(255, 255, 255, 0.5)
+        ;
+    }
+
+    .box-tulisan h3{
+        opacity: 0.7;
+    }
+    .box-tulisan h4{
+        opacity: 0.7;
+    }
+
+    /*untuk layar device berukuran kecil*/
+    @media screen and (max-width: 600px) {
+        .saklar{
+            left: 0;
+            /* width: 100%; */
+            top: 230px;
+        }
+        .bulan{
+            left: 70px;
+        }
+        .matahari{
+            left: 70px;
+        }
+        .gunung{
+            max-width: 100%;
+            width: 100%;
+            height: auto;
+            background-size: cover;
+            -moz-transform: scale(-1, 1);
+            -webkit-transform: scale(-1, 1);
+            -o-transform: scale(-1, 1);
+            -ms-transform: scale(-1, 1);
+            transform: scale(-1, 1);
+        }
+        .awan{
+            position: absolute;
+            top: 200px;
+            height: 190px;
+            width: 100%;
+            background-size: cover;
+        }
+        .box-tulisan{
+            top: 85px;
+            height: 300px;
+            padding: 20px;
+        }
+        .box-tulisan label{
+            display: none;
+        }
+        .box-tulisan h3{
+            font-size: small;
+        }
+        .box-tulisan h4{
+            font-size: small;
+        }   
+    }  
+
+    /*untuk layar device berukuran sedang*/
+    @media screen and (min-width: 601px) {
+        .saklar{
+            left: 0;
+            width: 100%;
+            top: 170px;
+        }
+        .bulan{
+            left: 70px;
+        }
+        .matahari{
+            left: 70px;
+        }
+        .gunung{
+            max-width: 100%;
+            width: 100%;
+            height: auto;
+            background-size: cover;
+            -moz-transform: scale(-1, 1);
+            -webkit-transform: scale(-1, 1);
+            -o-transform: scale(-1, 1);
+            -ms-transform: scale(-1, 1);
+            transform: scale(-1, 1);
+        }
+        .awan{
+            position: absolute;
+            top: 70px;
+            height: 300px;
+            width: 100%;
+            background-size: cover;
+        }
+        .box-tulisan{
+            top: 85px;
+            height: 400px;
+            padding: 20px;
+        }
+        .box-tulisan h3{
+            font-size: small;
+        }
+        .box-tulisan h4{
+            font-size: small;
+        }
+    }
+    
+    /*untuk layar device berukuran besar*/
+    @media screen and (min-width: 800px) {
+        .saklar{
+            width: 100%;
+            top: 230px;
+        }
+        .bulan{
+            left: 200px;
+        }
+        .matahari{
+            left: 200px;
+        }
+        .gunung{
+            max-width: 100%;
+            width: 100%;
+            height: auto;
+            background-size: cover;
+            -moz-transform: scale(-1, 1);
+            -webkit-transform: scale(-1, 1);
+            -o-transform: scale(-1, 1);
+            -ms-transform: scale(-1, 1);
+            transform: scale(-1, 1);
+        }
+        .awan{
+            position: absolute;
+            top: 90px;
+            height: 500px;
+            width: 100%;
+            background-size: cover;
+        }
+        .box-tulisan{
+            top: 85px;
+            height: 600px;
+            padding: 20px;
+        }
+        .box-tulisan h3{
+            font-size: x-large;
+        }
+        .box-tulisan h4{
+            font-size: x-large;
+        }   
+
+    }
+
+/* akhir header */
+
+/* awal body */
+
+    .badan{
+        border-top-left-radius: 30px;
+        border-top-right-radius: 30px;
+        /* padding: 20px; */
+        margin-top: 120px;
+        background-color: #1b1b2f;
+        color: white;
+        position: relative;
+        z-index: 50;
+        box-shadow: 
+           0.5rem 0.5rem 0.5rem rgba(0, 0, 0, 0.5)
+        ;
+    }
+
+    .fot{
+        margin-top: 25px;
+        background-color: #c02739;
+        /* border-radius: 100%; */
+        border-top-left-radius: 20px;
+        border-bottom-right-radius: 20px;
+        box-shadow: 
+           inset 0.5rem 0.5rem 0.5rem rgba(0, 0, 0, 0.5),
+           0.5rem 0.5rem 0.5rem rgba(255, 255, 255, 0.5)
+        ;
+    }
+
+    .ttg{
+        padding: 10px;
+    }
+
+    .ttg h5{
+        background-color: #c02739;
+        color: white;
+        padding: 10px;
+        /* border-radius: 10px; */
+        border-top-right-radius: 10px;
+        border-bottom-left-radius: 10px;
+        box-shadow: 
+           inset 0.5rem 0.5rem 0.5rem rgba(0, 0, 0, 0.5),
+           0.5rem 0.5rem 0.5rem rgba(255, 255, 255, 0.5)
+        ;
+        text-shadow: 2px 2px 1px #111;
+    }
+
+    .ttg p{
+        font-size: small;
+    }

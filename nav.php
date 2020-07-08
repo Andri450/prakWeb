@@ -1,0 +1,30 @@
+<nav class="w-gelap">
+    <!-- logo -->
+    <div class="logo">
+        <h3>
+            <div class="adr w-logo">Andr</div>
+            <div class="ianim">!</div>&nbsp;&nbsp;
+            <div class="tanim w-logo">.</div>
+        </h3>
+    </div>
+
+    <!-- nav -->
+    <ul>
+        <li><a class="link w-terang" href="">Home</a></li>
+        <li><a class="link w-terang" href="">Tentang</a></li>
+        <li><a class="link w-terang" href="">Contact</a></li>
+        <li><a class="link w-terang" href="">Skill</a></li>
+    </ul>
+
+    <span class="sidebtn w-terang" onclick="openNav();">Menu</span>
+
+    <!-- side nav -->
+    <div id="mySidenav" class="sidenav">
+        <span href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</span>
+        <a href="#">Home</a>
+        <a href="#">Skill</a>
+        <a href="#">Tentang</a>
+        <a href="#">Contact</a>
+    </div>
+    
+</nav>

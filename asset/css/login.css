@@ -1,0 +1,59 @@
+body{
+    margin: 0px;
+    padding: 0px;
+    background-color: #a8e6cf;
+}
+
+.box{
+    margin-top: 40px;
+    background-color: white;
+    padding: 20px;
+    border-radius: 10px;
+
+}
+
+.atas i{
+    color: #a8e6cf;
+}
+
+.atas{
+    padding: 20px;
+}
+
+.atas p{
+    font-size: xx-large;
+    font-family: simply;
+    color: #a8e6cf;
+}
+
+@font-face {
+    font-family: "simply";
+    src: url('SIMPLIFICA.ttf');
+}
+
+.btn{
+    width: 30%;
+    transition: 0.8s;
+    color: whitesmoke;
+    background-color: teal;
+}
+
+.btn:hover{
+    width: 100%;
+    transition: 0.8s;
+}
+
+#alert-u-p{
+    transition: 0.8s;
+    display: none;
+}
+
+#alert-u{
+    transition: 0.8s;
+    display: none;
+}
+
+#alert-p{
+    transition: 0.8s;
+    display: none;
+}
